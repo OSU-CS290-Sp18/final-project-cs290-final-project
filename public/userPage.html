@@ -5,7 +5,7 @@
 
     <head>
         <meta charset = "utf-8">
-        <title>Default's Page</title>
+        <title>Template's Page</title>
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
@@ -14,7 +14,54 @@
     </head>
 
     <body>
+        <header>
+            <a href="#"><h1 class="site-title"><i class=""></i>My Media List</h1></a>
+            <h2 id="user-name">Template User</h2>
+        </header>
+
+        <main class="list-container">
+            <ul class="item-list">
+                <!--Template List item
+                <li class="list-item">
+                    <a href="#" class="media-name">Template Name</a>
+                    <div class="media-score">x/10</div>
+                </li>
+                -->
+                <li class="list-item">
+                    <a href="#" class="media-name">osu!</a>
+                    <div class="media-score">10/10</div>
+                </li>
+
+                <li class="list-item">
+                    <a href="#" class="media-name">Garfield  Cart</a>
+                    <div class="media-score">100/10</div>
+                </li>
+            </ul>
+        </main>
+
+        <!--MODAL STUFF-->
+
+        <div class="modal-backdrop hidden"></div>
+        <div class="creation-modal hidden">
+            <form>
+                <div class="modal-text">Media Name:</div>
+                <input type="text" id="media-name-input">
+
+                <div class="modal-text">Review:</div>
+                <input type="text" id="review-input">
+
+                <div class="modal-text">Score:</div>
+                <input type="text" id="score-input">
+
+                <br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
         
+        <br>
+
+        <a href="#"><button class="create-item-button">+</button></a>
     </body>
 
 </html>
