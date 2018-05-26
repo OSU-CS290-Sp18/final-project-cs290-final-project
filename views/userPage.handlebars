@@ -1,45 +1,28 @@
-<!--HTML for the user page which contains the list of media items-->
-<!--Will become a template page later for extra dynamicnes       -->
 <!DOCTYPE html>
 <html>
 
     <head>
         <meta charset = "utf-8">
-        <title>Template's Page</title>
+        <title>{{userName}}'s Page</title>
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
 
-        <script src="index.js" charset="utf-8" defer></script>
         <script
         src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.runtime.js" defer>
         </script>
+        <script src="index.js" charset="utf-8" defer></script>
     </head>
 
     <body>
         <header>
             <a href="#"><h1 class="site-title"><i class=""></i>My Media List</h1></a>
-            <h2 id="user-name">Template User</h2>
+            <h2 id="user-name">{{userName}}</h2>
         </header>
 
         <main id="list-container">
             <ul id="item-list">
-                <!--Template List item
-                <li class="list-item">
-                    <a href="#" class="media-name">Template Name</a>
-                    <div class="media-review hidden">x</div>
-                    <div class="media-score">x/10</div>
-                </li>
-                -->
-                <li class="list-item">
-                    <a href="#" class="media-name">osu!</a>
-                    <div class="media-score">10/10</div>
-                </li>
-
-                <li class="list-item">
-                    <a href="#" class="media-name">Garfield  Cart</a>
-                    <div class="media-score">100/10</div>
-                </li>
+                <!--This is where to insert new list item-->
             </ul>
         </main>
 
@@ -49,7 +32,7 @@
         <div id="creation-modal" class="hidden">
             <form>
                 <div class="modal-text">Media Name:</div>
-                <input type="text" id="name-input">
+                <input type="text" id="media-name-input">
 
                 <div class="modal-text">Review:</div>
                 <input type="text" id="review-input">
@@ -59,7 +42,7 @@
 
                 <br>
 
-                <input type="submit" value="Submit" id="modal-submit">
+                <input type="submit" value="Submit">
             </form>
         </div>
         
