@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm start",
-    "build": "handlebars views/partials/photoCard.handlebars -f public/mediaListItem.js",
+    "build": "handlebars views/partials/mediaListItem.handlebars -f public/mediaListItem.js",
     "run": "npm start build"
   },
   "repository": {

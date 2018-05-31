@@ -34,14 +34,14 @@ function submitClicked() {
         alert('All fields must be filled.');
     else {
         //creates HTML from the handlebars template
-        let newListItemHTML = Handlebars.template.userPageListItem({
+        let newListItemHTML = Handlebars.templates.mediaListItem({
             itemName:   mediaName,
             itemReview: mediaReview,
             itemScore:  mediaScore
         });
 
         //appends the new HTML code into the list container
-        let listContainer = document.getElementById('item-list');
+        let listContainer = document.getElementById('list-container');
         listContainer.insertAdjacentHTML('beforeend', newListItemHTML);
 
         //resets the modal
