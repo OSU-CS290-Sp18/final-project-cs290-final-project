@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
 
+        <script src="mediaListItem.js" defer></script>
         <script src="index.js" charset="utf-8" defer></script>
         <script
         src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.runtime.js" defer>
@@ -47,20 +48,22 @@
 
         <div id="modal-backdrop" class="hidden"></div>
         <div id="creation-modal" class="hidden">
-            <form>
-                <div class="modal-text">Media Name:</div>
-                <input type="text" id="name-input">
+            <label for="name-input" class="modal-text">Media Name</label>
+            <input type="text" id="name-input">
 
-                <div class="modal-text">Review:</div>
-                <input type="text" id="review-input">
+            <br>
 
-                <div class="modal-text">Score:</div>
-                <input type="text" id="score-input">
+            <label for="review-input" class="modal-text">Review</label>
+            <input type="text" id="review-input">
 
-                <br>
+            <br>
 
-                <input type="submit" value="Submit" id="modal-submit">
-            </form>
+            <label for="score-input" class="modal-text">Score</label>
+            <input type="text" id="score-input">
+
+            <br>
+
+            <button type="submit" id="modal-submit">Submit</button>
         </div>
         
         <br>
