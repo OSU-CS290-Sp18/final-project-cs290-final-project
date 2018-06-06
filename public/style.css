@@ -1,5 +1,105 @@
 /* CSS sheet for all html files */
 
+
+.site-title {
+	margin: 15px 15px;
+	font-size: 35px;
+	font-weight: 400;
+	background-color: ;
+	color: #1c1c1c;
+}
+
 .hidden {
     display: none;
 }
+
+body {
+	font-family: Roboto, Helvetica, Sans-Serif;
+	color: ;
+	background-color: #d8d8d8;
+}
+
+a {}
+
+a:hover {}
+
+/* Home Page */
+.navbar {
+	background-color: #fff;
+	font-size: 20px;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-item a {
+	display: inline-block;
+}
+
+.user-container {
+	display: ;
+	
+	margin: 5px;
+	padding:  10px;
+}
+
+.user {
+	border: 2px solid #4c4c4c;
+	margin: 7px;
+	padding: 5px;
+}
+
+/*  UserPage  */
+
+#user-name {
+	font-size: 26px;
+	color: ;
+}
+
+#item-list {
+
+}
+
+.list-item {}
+
+.media-name {}
+
+.media-score {}
+
+/* modal stuff */
+#modal-backdrop {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.90);
+}
+
+
+#creation-modal {
+	position: fixed;
+	overflow: scroll;
+}
+
+#modal-submit {
+
+}
+
+#modal-submit:hover {
+
+}
+
+#create-item-button {
+	position: fixed;
+	color: ;
+	background-color: ;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
+}
+
+#name-input {}
+
+#review-input {}
+
+#score-input {}
+
+
+
+

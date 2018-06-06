@@ -1,11 +1,19 @@
+<!-- HTML for the main page which will contain links to user page. -->
+<!--    To be templatized... -->
 <!DOCTYPE html>
 <html>
+
     <head>
     	<meta charset = "utf-8">
         <title>My Media List</title>
 
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+
+        <!--Scripts-->
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.runtime.js" defer>
+        </script>
 
         <script src="index.js" charset="utf-8" defer></script>
     </head>
@@ -16,14 +24,14 @@
         	<a href="#"><h1 class="site-title"><i class=""></i>My Media List</h1></a>
         </header>
 
-        <nav>
+        <nav class="navbar">
         	<ul>
-        		<li><a href="/">Home</a></li>
-        		<li><a href="/users">Users</a></li>
+        		<li class="nav-item"><a href="/">Home</a></li>
+        		<li class="nav-item"><a href="/users">Users</a></li>
         	</ul>
         </nav>
 
-        <main class="">
+        <main class="user-container">
 
         	<article class="user">
         		<div class="user-icon">
