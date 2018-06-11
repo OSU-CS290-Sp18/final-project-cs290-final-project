@@ -41,7 +41,7 @@ function submitClicked() {
         });
 
         //appends the new HTML code into the list container
-        let listContainer = document.getElementById('list-container');
+        let listContainer = document.getElementById('item-list');
         listContainer.insertAdjacentHTML('beforeend', newListItemHTML);
 
         //resets the modal
