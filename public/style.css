@@ -1,12 +1,20 @@
 /* CSS sheet for all html files */
 
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px;
+  padding: 10px;
+}
 
 .site-title {
+  display: flex;
+  justify-content: center;
 	margin: 15px 15px;
-	font-size: 35px;
-	font-weight: 400;
+	font-size: 60px;
+	font-weight: 600;
 	background-color: ;
-	color: #1c1c1c;
+	color: #FFFFFF;
 }
 
 .hidden {
@@ -16,32 +24,75 @@
 body {
 	font-family: Roboto, Helvetica, Sans-Serif;
 	color: ;
-	background-color: #d8d8d8;
+	background-color: #222222;
 }
 
-a {}
+a {
+  text-decoration: none;
+}
 
 a:hover {}
 
 /* Home Page */
 .navbar {
-	background-color: #fff;
+	background-color: #222222;
 	font-size: 20px;
+  border-top: 3px solid #4c4c4c;
+  border-bottom: 2px solid #4c4c4c;
+  border-radius: 20px;
 }
 
 .nav-item {
 	display: inline-block;
+  color: #f53229;
+  font-weight: 400;
+  margin-right: 50px;
 }
 
 .nav-item a {
 	display: inline-block;
+  color: #f53229;
 }
 
+.active, nav-item a:hover { 
+  border-bottom: 3px solid #f53229; /* Here to underline current selected tab on home page */
+}
+
+/* all my code from assignment 2's search bar start */
+
+#navitem-navbar-search {
+  margin: 0px;
+  margin-right: 40px;
+  float: right;
+  list-style-type: none;
+}
+
+#navbar-search-input {
+  background-color: lightgray;
+  outline: none;
+  text-decoration: none;
+  height: 20px;
+}
+
+#navbar-search-input:focus {
+  background-color: #FFFFFF;
+  outline: none;
+  outline-width: none;
+}
+
+#navbar-search-button:hover {
+  color: #f53229;
+}
+
+/* code end. Need to know if we are using the fas fa-search stuff and needs to be implemented into the index.html for use */
+
 .user-container {
-	display: ;
-	
-	margin: 5px;
-	padding:  10px;
+  margin-top: 50px;
+	display: flex;
+  flex-wrap: wrap;
+	padding-left: 250px;
+	padding-right: 0px;
+  position: relative;
 }
 
 .user {
@@ -50,22 +101,52 @@ a:hover {}
 	padding: 5px;
 }
 
+.user-icon a{
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+ }  
+
+.user-text {
+  margin: 0px;
+  color: #f53229; /* testing different red, it's good */
+  font-weight: 400;
+  width: 290px;
+  margin-bottom: 10px;
+}
+
 /*  UserPage  */
 
 #user-name {
 	font-size: 26px;
-	color: ;
+	color: #DB1C03;
 }
 
 #item-list {
 
 }
 
-.list-item {}
+.list-item {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #4c4c4c;
+  margin: 7px;
+  padding: 5px;
+  height: 100px;
+}
 
-.media-name {}
+.media-name {
+  font-size: 26px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
 
-.media-score {}
+.media-score {
+  font-size: 26px;
+  font-weight: 500;
+  color: #f53229;
+}
 
 /* modal stuff */
 #modal-backdrop {
@@ -91,6 +172,8 @@ a:hover {}
 	position: fixed;
 	color: ;
 	background-color: ;
+  bottom: 10%;
+  right: 10%;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
 }
 
