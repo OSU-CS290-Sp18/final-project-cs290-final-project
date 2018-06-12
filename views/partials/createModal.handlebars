@@ -1,38 +1,34 @@
 <div id="modal-backdrop" class="hidden"></div>
-    <div id="creation-modal" class="hidden">
-      <div class="modal-dialog">
+<div id="creation-modal" class="hidden">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h3>Add Media you want to review: </h3>
+      <button type="button" id="modal-close-button">&times;</button>
+    </div>
 
-        <div class="modal-header">
-          <h3>Add Media you want to review: </h3>
-          <button type="button" class="modal-close-button">&times;</button>
-        </div>
+    <div class="modal-body">
+      <div class="input-element">
+        <label for="text-input">Name</label>
+        <textarea id="name-input"></textarea>
+      </div>
 
-        <div class="modal-body">
-          <div class="input-element">
-            <label for="text-input">Name</label>
-            <textarea id="name-input"></textarea>
-          </div>
-          
-          <div class="input-element">
-            <label for="text-input">Description/Review</label>
-            <textarea id="review-input"></textarea>
-          </div>
-          
-          <div class="input-element">
-            <label for="text-input">Score</label>
-            <input type="text" id="score-input">
-          </div>
-          
-<!-- This part for Photo is just a placeholder for now -->     
-          <div class="input-element">
-            <label for="url-input">Photo URL</label>
-            <input type="url" id="image-input">
-          </div>
+      <div class="input-element">
+        <label for="text-input">Description/Review</label>
+        <textarea id="review-input"></textarea>
+      </div>
 
-        <div class="modal-footer">
-          <button type="button" class="cancel-button">Cancel</button>
-          <button type="button" class="create-button">Create</button>
-        </div>
+      <div class="input-element">
+        <label for="text-input">Score</label>
+        <input type="text" id="score-input">
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" id="cancel-button">Cancel</button>
+        <button type="button" id="modal-submit">Create</button>
       </div>
     </div>
+  </div>
 </div>
+
+<!--Button -->
+<a href="#"><button id="create-item-button">+</button></a>

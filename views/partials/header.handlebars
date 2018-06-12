@@ -1,17 +1,32 @@
 <header>
-    <a href="#"><h1 class="site-title"><i class=""></i>My Media List</h1></a>
+  <h1 class="site-title"><i class=""></i>My Media List</h1>
+  <!--
+  <nav class="navbar">
+    <ul class="navlist">
+      <li class="navitem navlink active"><a href="/">Home</a></li>
+    </ul>
+    
+    <div class="navbar-search">
+        <div class="navbar-search">
+          <input type="text" id="navbar-search-input" placeholder="Search: ">
+          <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+  </nav>  
+  -->
 
-    <nav class="navbar">
-      <ul class="navlist">
-        <li class="nav-item"><a href="/users">Users</a></li> 
-        <li class="navitem navlink active"><a href="/home">Home</a></li>
-      </ul>
-      
-      <div class="navbar-search-container">
-          <div class="navbar-search">
-            <input type="text" id="navbar-search-input" placeholder="Search: ">
-            <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
-          </div>
-      </div>
-    </nav>       
+<nav class="navbar">
+  <ul>
+    <li class="nav-item"><a href="/">Home</a></li>
+    <li class="nav-item navbar-search">
+      <input type="text" id="navbar-search-input" placeholder="Search...">
+      <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+    </li>
+  </ul>
+</nav>
+
+  {{#if userName}}
+    <h2 id="user-name">{{userName}}</h2>
+  {{/if}}
+
 </header>

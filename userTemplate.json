@@ -1,0 +1,62 @@
+{
+    "Jackson": {
+        "userName": "Jackson",
+        "reviews": [
+            {
+                "itemName": "t1",
+                "itemScore": "10",
+                "itemReview": "yes"
+            },
+            {
+                "itemName": "t2",
+                "itemScore": "10",
+                "itemReview": "yes"
+            }
+        ]
+    },
+    "Chase": {
+        "userName": "Chase",
+        "reviews": [
+            {
+                "itemName": "t1",
+                "itemScore": "10",
+                "itemReview": "yes"
+            },
+            {
+                "itemName": "t2",
+                "itemScore": "10",
+                "itemReview": "yes"
+            }
+        ]
+    },
+    "Mark": {
+        "userName": "Mark",
+        "reviews": [
+            {
+                "itemName": "t1",
+                "itemScore": "10",
+                "itemReview": "yes"
+            },
+            {
+                "itemName": "t2",
+                "itemScore": "10",
+                "itemReview": "yes"
+            }
+        ]
+    },
+    "Calvin": {
+        "userName": "Calvin",
+        "reviews": [
+            {
+                "itemName": "t1",
+                "itemScore": "10",
+                "itemReview": "yes"
+            },
+            {
+                "itemName": "t2",
+                "itemScore": "10",
+                "itemReview": "yes"
+            }
+        ]
+    }
+}
