@@ -1,60 +1,9 @@
-<!DOCTYPE html>
-<html>
+{{> header}}
 
-    <head>
-        <meta charset = "utf-8">
-        <title>{{userName}}'s Page</title>
+<main id="list-container">
+    {{#each reviews}}
+        {{> mediaListItem}}
+    {{/each}}
+</main>
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-
-        <!--Scripts-->
-        <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.runtime.js" defer>
-        </script>
-
-        <script src="mediaListItem.js" defer></script>
-
-        <script src="index.js" charset="utf-8" defer></script>
-    </head>
-
-    <body>
-        <header>
-            <a href="#"><h1 class="site-title"><i class=""></i>My Media List</h1></a>
-            <h2 id="user-name">{{userName}}</h2>
-        </header>
-
-        <main id="list-container">
-            {{#each mediaItem}}
-                {{> mediaListItem}}
-            {{/each}}
-        </main>
-
-        <!--MODAL STUFF-->
-
-        <div id="modal-backdrop" class="hidden"></div>
-        <div id="creation-modal" class="hidden">
-            <label for="name-input" class="modal-text">Media Name</label>
-            <input type="text" id="name-input">
-
-            <br>
-
-            <label for="review-input" class="modal-text">Review</label>
-            <input type="text" id="review-input">
-
-            <br>
-
-            <label for="score-input" class="modal-text">Score</label>
-            <input type="text" id="score-input">
-
-            <br>
-
-            <button type="submit" id="modal-submit">Submit</button>
-        </div>
-        
-        <br>
-
-        <a href="#"><button id="create-item-button">+</button></a>
-    </body>
-
-</html>
+{{> createModal}}
