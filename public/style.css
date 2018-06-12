@@ -60,11 +60,11 @@ a:hover {}
 
 /* all my code from assignment 2's search bar start */
 
-#navitem-navbar-search {
+.nav-item.navbar-search {
+  display: inline-block;
 	margin: 0px;
-	margin-right: 40px;
 	float: right;
-	list-style-type: none;
+  text-align: right;
 }
 
 #navbar-search-input {
@@ -90,7 +90,6 @@ a:hover {}
 	margin: 60px 5%;
 	display: flex;
 	flex-wrap: wrap;
-	
 	position: relative;
 }
 
@@ -219,3 +218,20 @@ a:hover {}
 	font-weight: 400;
 }
 
+.404-title {
+	display: flex;
+	justify-content: center;
+	margin: 15px 15px;
+	font-size: 60px;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+.404-text {
+	display: flex;
+	justify-content: center;
+	margin: 15px 15px;
+	font-size: 40px;
+	font-weight: 300;
+	color: #FFFFFF;
+}
