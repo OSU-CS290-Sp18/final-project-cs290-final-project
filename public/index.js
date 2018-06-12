@@ -2,6 +2,7 @@
 
 /* Function name: SearchMedia
  * User searches through the database by the name of the media upon input
+ *
   */
 var SearchMedia = document.getElementById('media-search-input');
 
