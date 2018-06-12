@@ -1,0 +1,85 @@
+<!--HTML for the user page which contains the list of media items-->
+<!--Will become a template page later for extra dynamicnes       -->
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset = "utf-8">
+        <title>Template's Page</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <!--Scripts-->
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.runtime.js" defer>
+        </script>
+
+        <script src="mediaListItem.js" defer></script>
+
+        <script src="index.js" charset="utf-8" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="#"><h1 class="site-title"><i class=""></i>My Media List</h1></a>
+            <h2 id="user-name">Template User</h2>
+        </header>
+        
+        <nav class="navbar">
+        	<ul>
+        		<li class="nav-item"><a href="/">Home</a></li>
+        		<li class="nav-item"><a href="/users">Users</a></li>  <!-- Should we put the user-name below the nav bar so it isn't shifted down when you go to a new user's page?-->
+        	</ul>
+        </nav>
+
+
+        <main id="list-container">
+            <ul id="item-list">
+                <!--Template List item
+                <li class="list-item">
+                    <a href="#" class="media-name">Template Name</a>
+                    <div class="media-review hidden">x</div>
+                    <div class="media-score">x/10</div>
+                </li>
+                -->
+                <li class="list-item">
+                    <a href="#" class="media-name">osu!</a>
+                    <div class="media-score">10/10</div>
+                </li>
+
+                <li class="list-item">
+                    <a href="#" class="media-name">Garfield  Cart</a>
+                    <div class="media-score">100/10</div>
+                </li>
+            </ul>
+        </main>
+
+        <!--MODAL STUFF-->
+
+        <div id="modal-backdrop" class="hidden"></div>
+        <div id="creation-modal" class="hidden">
+            <label for="name-input" class="modal-text">Media Name</label>
+            <input type="text" id="name-input">
+
+            <br>
+
+            <label for="review-input" class="modal-text">Review</label>
+            <input type="text" id="review-input">
+
+            <br>
+
+            <label for="score-input" class="modal-text">Score</label>
+            <input type="text" id="score-input">
+
+            <br>
+
+            <button type="submit" id="modal-submit">Submit</button>
+        </div>
+        
+        <br>
+
+        <a href="#"><button id="create-item-button">+</button></a>
+    </body>
+
+</html>
