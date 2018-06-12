@@ -3,14 +3,14 @@
         "userName": "Jackson",
         "reviews": [
             {
-                "itemName": "Template Name 1",
-                "itemReview": "Template Review 1",
-                "itemScore": "x"
+                "itemName": "Star Wars: The Last Jedi",
+                "itemReview": "This movie took risks.",
+                "itemScore": "7"
             },
             {
-                "itemName": "Template Name 2",
-                "itemReview": "Template Review 2",
-                "itemScore": "x"
+                "itemName": "Agame ga Kill",
+                "itemReview": "Some good anime",
+                "itemScore": "10"
             }
         ]
     },
@@ -18,14 +18,14 @@
         "userName": "Mark",
         "reviews": [
             {
-                "itemName": "Template Name 1",
-                "itemReview": "Template Review 1",
-                "itemScore": "x"
+                "itemName": "Fortnite",
+                "itemReview": "Too mainstream for me.",
+                "itemScore": "5"
             },
             {
-                "itemName": "Template Name 2",
-                "itemReview": "Template Review 2",
-                "itemScore": "x"
+                "itemName": "Overwatch",
+                "itemReview": "What real gamers play",
+                "itemScore": "10"
             }
         ]
     },
@@ -33,14 +33,14 @@
         "userName": "Chase",
         "reviews": [
             {
-                "itemName": "Template Name 1",
-                "itemReview": "Template Review 1",
-                "itemScore": "x"
+                "itemName": "Super Smash Bros",
+                "itemReview": "Smashing",
+                "itemScore": "9"
             },
             {
-                "itemName": "Template Name 2",
-                "itemReview": "Template Review 2",
-                "itemScore": "x"
+                "itemName": "Solo",
+                "itemReview": "Another Star Wars movie...",
+                "itemScore": "7"
             }
         ]
     },
@@ -48,14 +48,14 @@
         "userName": "Calvin",
         "reviews": [
             {
-                "itemName": "Template Name 1",
+                "itemName": "Westworld",
                 "itemReview": "Template Review 1",
-                "itemScore": "x"
+                "itemScore": "10"
             },
             {
-                "itemName": "Template Name 2",
-                "itemReview": "Template Review 2",
-                "itemScore": "x"
+                "itemName": "Curb Your Enthusiasm",
+                "itemReview": "Pretty, pretty good",
+                "itemScore": "10"
             }
         ]
     }
