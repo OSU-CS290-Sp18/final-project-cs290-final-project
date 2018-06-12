@@ -2,6 +2,7 @@ var express = require('express');
 var exphb = require('express-handlebars');
 var peopleData = require('./userTemplate');
 var MongoClient = require('mongodb').MongoClient;
+var bodyParser = require('body-parser');
 
 var mongoHost = process.env.MONGO_HOST;
 var mongoPort = process.env.MONGO_PORT || '27017';
