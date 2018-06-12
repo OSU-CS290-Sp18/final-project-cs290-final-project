@@ -1,5 +1,31 @@
 /* JS File for handling the home screen */
 
+/* Function name: SearchMedia
+ * User searches through the database by the name of the media upon input
+ *
+  */
+ var SearchMedia = document.getElementById('media-search-input');
+
+ SearchMedia.oninput = function() {
+ 
+   var name = document.querySelectorAll('.name-input').length;
+   var input = SearchMedia.value;
+ 
+   for(var i =0; i < name; i++){
+ 
+     console.log(input);
+     console.log(name);
+ 
+     if(document.getElementsByClassName('name-input')[i].innerText.indexOf(input) > -1) {
+       document.getElementsByClassName('media')[i].style.display='block';
+     } else {
+       document.getElementsByClassName('media')[i].style.display='none';
+     }
+   }
+ }
+
+/* JS File for handling the home screen */
+
 /* clearForms()
  * Runs when a proper item is created and the submit button on the modal is clicked
  * Clears the input fields of text from the modal
