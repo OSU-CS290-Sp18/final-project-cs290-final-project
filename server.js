@@ -23,7 +23,7 @@ app.engine('handlebars', exphb({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 //app.use(bodyParser.json());
-app.use(express.static('public'));
+
 
 app.get('/', function(req, res, next) {
     res.status(200).render('homePage', {
@@ -39,6 +39,8 @@ app.get('/user/:user', function(req, res, next) {
         next();
     }
 });
+
+app.use(express.static('public'));
 
 app.use('*', function(req, res, next) {
     res.status(404).render('404Page');
