@@ -1,9 +1,10 @@
 /* JS File for handling the home screen */
 
-/* Function name: SearchMedia
+/* Function name: SearchMedia by Mark
  * User searches through the database by the name of the media upon input
  *
-  */
+ */
+
 var SearchMedia = document.getElementById('media-search-input');
 
 SearchMedia.oninput = function() {

@@ -1,0 +1,62 @@
+[
+    {
+        "userName": "Jackson",
+        "reviews": [
+            {
+                "itemName": "Template Name 1",
+                "itemReview": "Template Review 1",
+                "itemScore": "x"
+            },
+            {
+                "itemName": "Template Name 2",
+                "itemReview": "Template Review 2",
+                "itemScore": "x"
+            }
+        ]
+    },
+    {
+        "userName": "Mark",
+        "reviews": [
+            {
+                "itemName": "Template Name 1",
+                "itemReview": "Template Review 1",
+                "itemScore": "x"
+            },
+            {
+                "itemName": "Template Name 2",
+                "itemReview": "Template Review 2",
+                "itemScore": "x"
+            }
+        ]
+    },
+    {
+        "userName": "Chase",
+        "reviews": [
+            {
+                "itemName": "Template Name 1",
+                "itemReview": "Template Review 1",
+                "itemScore": "x"
+            },
+            {
+                "itemName": "Template Name 2",
+                "itemReview": "Template Review 2",
+                "itemScore": "x"
+            }
+        ]
+    },
+    {
+        "userName": "Calvin",
+        "reviews": [
+            {
+                "itemName": "Template Name 1",
+                "itemReview": "Template Review 1",
+                "itemScore": "x"
+            },
+            {
+                "itemName": "Template Name 2",
+                "itemReview": "Template Review 2",
+                "itemScore": "x"
+            }
+        ]
+    }
+]
