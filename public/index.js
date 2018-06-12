@@ -14,10 +14,10 @@ function updateSearch() {
         console.log('searchInput: ', searchInput);
         console.log(name);
 
-        if(document.getElementsByClassName('user-attribution')[i].innerText.indexOf(input) > -1) {
-            document.getElementsByClassName('user')[i].style.display='block';
+        if(document.getElementsById('user-attribution')[i].innerText.indexOf(input) > -1) {
+            document.getElementsById('user')[i].style.display='block';
         } else {
-            document.getElementsByClassName('user')[i].style.display='none';
+            document.getElementsById('user')[i].style.display='none';
         }
     }
 }
@@ -49,17 +49,6 @@ function toggleCreationModal() {
     clearForms();
 }
 
-function getPersonIdFromURL() {
-    let path      = window.location.pathname;
-    let pathParts = path.split('/');
-
-    if (pathParts[1] === "user") {
-        return pathParts[2];
-    } else {
-        return null;
-    }
-}
-
 /* submitClicked()
  * Runs when a user clicks the submit button
  * Creates a new list item (will send to DB at some point) and puts it into the list
@@ -75,34 +64,19 @@ function submitClicked() {
     else if (parseInt(mediaScore) > 10 || parseInt(mediaScore) < 1)
         alert('The score must be between 1 and 10.');
     else{
-        let request  = new XMLHttpRequest();
-        let userName = getUserNameFromURL();
-        let url = '/user' + userName + 'newMedia';
-        request.open('POST', url);
 
-        let requestBody = JSON.stringify({
-            itemName: mediaName,
-            itemScore: mediaScore,
-            itemReview: mediaReview
+        /* OLD HANDLEBARS CODE, REPLACE w/ MONGODB
+        //creates HTML from the handlebars template
+        let newListItemHTML = Handlebars.templates.mediaListItem({
+            itemName:   mediaName,
+            itemReview: mediaReview,
+            itemScore:  mediaScore
         });
 
-        request.addEventListener('load', function (event) {
-            if (event.target.status === 200) {
-                let newListItemHTML = Handlebars.templates.mediaListItem({
-                    itemName:   mediaName,
-                    itemReview: mediaReview,
-                    itemScore:  mediaScore
-                });
-                //appends the new HTML code into the list container
-                let listContainer = document.getElementById('item-list');
-                listContainer.insertAdjacentHTML('beforeend', newListItemHTML);
-            } else {
-                alert("Error storing item: " + event.target.response);
-            }
-        });
-
-        request.setRequestHeader('Content-Type', 'application/json');
-        request.send(requestBody);
+        //appends the new HTML code into the list container
+        let listContainer = document.getElementById('item-list');
+        listContainer.insertAdjacentHTML('beforeend', newListItemHTML);
+        */
 
         //resets the modal
         toggleCreationModal();
