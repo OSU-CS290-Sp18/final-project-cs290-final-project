@@ -78,6 +78,8 @@ function submitClicked() {
     else{
         let request  = new XMLHttpRequest();
         let userName = getUserNameFromURL();
+        let url = '/user' + userName + 'newMedia';
+        request.open('POST', url);
 
         let requestBody = JSON.stringify({
             itemName: mediaName,
