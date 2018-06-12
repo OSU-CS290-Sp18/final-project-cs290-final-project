@@ -8,18 +8,17 @@
 function updateSearch() {
     let searchInput = document.getElementById('navbar-search-input').value;
 
-    var name = document.querySelectorAll('.name-input').length;
+    var name = document.querySelectorAll('.user-attribution').length;
 
     for(var i =0; i < name; i++){
+        console.log('searchInput: ', searchInput);
+        console.log(name);
 
-    console.log('searchInput: ', searchInput);
-    console.log(name);
-
-    if(document.getElementsByClassName('name-input')[i].innerText.indexOf(input) > -1) {
-        document.getElementsByClassName('media')[i].style.display='block';
-    } else {
-        document.getElementsByClassName('media')[i].style.display='none';
-    }
+        if(document.getElementsByClassName('user-attribution')[i].innerText.indexOf(input) > -1) {
+            document.getElementsByClassName('user')[i].style.display='block';
+        } else {
+            document.getElementsByClassName('user')[i].style.display='none';
+        }
     }
 }
 */
