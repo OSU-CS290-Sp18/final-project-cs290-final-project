@@ -187,6 +187,12 @@ a:hover {}
 #creation-modal {
 	position: fixed;
 	overflow: scroll;
+	z-index: 1010;
+}
+
+.modal-header {
+	font-size: 20px;
+	color: #FFFFFF;
 }
 
 #modal-submit {
@@ -199,18 +205,26 @@ a:hover {}
 
 #create-item-button {
 	position: fixed;
-	/*
-	color: ;
-	background-color: ;
-	*/
+	font-size: 50px;
 	bottom: 10%;
-	right: 10%;
+	right: 5%;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
+	border: 5px solid ##4c4c4c;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
-#name-input {}
+.input-element {
+	color: #FFFFFF;
+	display: flex;
+  	align-items: center;
+}
 
-#review-input {}
+#review-input {
+	min-height: 80px;
+	min-width: 200px;
+	margin: 5px;
+}
 
 #score-input {}
 
